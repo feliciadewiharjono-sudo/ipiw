@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4e7dc;
+  color: #5c4a3f;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section {
+  position: relative;
+  overflow: visible;
+}
+
+/* HERO */
+.hero {
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* background like your design */
+  background: linear-gradient(#f3e354, #ffffff);
+  border-radius: 0; /* remove card look */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;   /* THIS is the key */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically if needed */
+  gap: 10px;                /* spacing between lines */
+}
+
+/* center content nicely */
+.hero-content {
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.hero span {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.scroll {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* CARD */
+.card {
+  background: #f1d6c1;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* MEMORIES */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px,1fr));
+  gap: 10px;
+}
+
+.photo {
+ width: 100%;
+  height: 100px;        /* IMPORTANT */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* REASONS */
+.reason {
+  background: #f4b942;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* hidden state */
+.reason.hidden {
+  background: #e0d6cc;
+  color: transparent;
+  position: relative;
+}
+
+/* placeholder text */
+.reason.hidden::after {
+  content: "Tap me ✨";
+  color: #8a7a6f;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+}
+
+/* hidden state */
+.reason.hidden {
+  background: #e0d6cc;
+  color: transparent;
+  position: relative;
+}
+
+/* placeholder text */
+.reason.hidden::after {
+  content: "Tap me ✨";
+  color: #8a7a6f;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* joke */
+.joke-img {
+  width: 100%;
+  background: #eee;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.joke-img {
+  transition: transform 0.2s ease;
+}
+
+.joke-img:hover {
+  transform: translateY(-3px);
+}
+
+/* image styling */
+.joke-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* FUTURE */
+.future ul {
+  padding-left: 20px;
+}
+
+/* FINAL */
+.final {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(#f1d6c1, #f4b942);
+  border-radius: 20px;
+}
+
+.final {
+  overflow: visible;
+}
+
+.status {
+  background: #7a3e0f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+.love {
+  background: #f4b942;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.love {
+  position: relative;
+  z-index: 10;
+}
+
+.love {
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+}
